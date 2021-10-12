@@ -7,7 +7,8 @@
 *   greet the user based on the time of the day.
 *   Show data in recyclerView in Item card.   
 *   Save the data for offline usage.
- 
+*   Save the data for offline usage.
+*   unit test 
  ###### **Tecgnologes uses in it.**
  * Kotlin.
  * xml
@@ -18,7 +19,7 @@
  * Coroutines
  * Retrofit
  * okhttp3
- 
+
   ###### **Tools and IDEs uses.**
 * Android Studio
 
