@@ -1,0 +1,28 @@
+{
+   "medications_classes":[
+      {
+         "id":1,
+         "dose":"",
+         "strength":"500 mg",
+         "name":"asprin"
+      },
+      {
+         "id":2,
+         "dose":"",
+         "strength":"500 mg",
+         "name":"somethingElse"
+      },
+      {
+         "id":3,
+         "dose":"",
+         "strength":"250 mg",
+         "name":"asprin"
+      },
+      {
+         "id":4,
+         "dose":"",
+         "strength":"250 mg",
+         "name":"somethingElse"
+      }
+   ]
+}

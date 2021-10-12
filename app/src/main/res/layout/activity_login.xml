@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:fillViewport="true"
+       >
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layoutAnimation="@anim/layout_animation"
+           app:layout_behavior="@string/appbar_scrolling_view_behavior"
+           android:background="@color/cardview_shadow_end_color"
+           tools:context=".presentation.LoginActivity">
+
+           <ImageView
+               android:id="@+id/logo"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_150sdp"
+               android:src="@drawable/ic_logo"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:tint="@color/black" />
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/user_name_box"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="@dimen/_20sdp"
+               android:layout_marginTop="@dimen/_20sdp"
+               android:layout_marginEnd="@dimen/_20sdp"
+               android:hint="@string/user_name"
+               app:boxBackgroundColor="@null"
+               app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+               app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+               app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+               app:boxCornerRadiusTopStart="@dimen/_10sdp"
+               app:boxStrokeColor="@null"
+
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/logo"
+               app:startIconDrawable="@drawable/ic_baseline_perm_identity_24">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/user_name"
+                   android:fontFamily="@font/ample_soft_pro_regular"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+           </com.google.android.material.textfield.TextInputLayout>
+           <com.google.android.material.button.MaterialButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toBottomOf="@+id/user_name_box"
+               android:layout_marginTop="@dimen/_20sdp"
+               app:backgroundTint="@color/cardview_dark_background"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               android:textSize="@dimen/_16ssp"
+               android:id="@+id/login"
+               android:text="@string/login"
+               android:fontFamily="@font/ample_soft_pro_medium"
+               android:textAllCaps="false"
+               android:paddingStart="@dimen/_50sdp"
+               android:paddingEnd="@dimen/_50sdp"
+               android:paddingBottom="@dimen/_7sdp"
+               android:paddingTop="@dimen/_7sdp"
+               app:cornerRadius="@dimen/_20sdp"
+               app:rippleColor="@color/shadow"
+               />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+   </ScrollView>
+
+
+
+    <data>
+
+    </data>
+</layout>
